@@ -1,4 +1,4 @@
-# Traveling Sales Man Problem (MVP — Multi‑Vehicle Routing Problem)
+# Traveling Sales Man Problem — Multi‑Agent Vehicle Routing Problem (VRP)
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-%20-%23150458?logo=pandas&logoColor=white)
@@ -8,11 +8,13 @@
 
 Overview
 --------
-This repository captures the original solution and artifacts for the Traveling Sales Man Problem (MVP) as implemented during the analysis phase. In this context "MVP" is used to denote the multi‑vehicle routing problem variant (multi‑agent routing), where the objective is to assign routes to multiple agents so that:
+This repository captures the original analysis, data, and final‑route artifacts for the Traveling Sales Man Problem, focusing on the multi‑agent Vehicle Routing Problem (VRP). The VRP variant studied assigns locations to multiple agents (41 in the provided dataset) and seeks routes that:
 
-- All locations are visited exactly once.
-- Each agent receives a route (sequence of locations) and returns to its depot if required.
-- The total distance is minimized while keeping per‑agent workloads balanced.
+- Cover all locations exactly once.
+- Produce per‑agent ordered routes (returning to depot if required).
+- Minimize combined travel distance while balancing per‑agent workloads.
+
+The repo includes the exploratory data analysis (EDA), two solution strategies evaluated during prototyping, exported route artifacts, and evaluation metrics used to compare approaches.
 
 Quick links
 -----------
