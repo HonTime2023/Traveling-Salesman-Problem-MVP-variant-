@@ -6,6 +6,18 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-%23150458?logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white) ![OR-Tools](https://img.shields.io/badge/OR--Tools-4285F4?logo=google&logoColor=white) ![GeoPandas](https://img.shields.io/badge/GeoPandas-optional-2B7A78) ![Tesseract](https://img.shields.io/badge/Tesseract-OCR-black) ![Google%20Vision](https://img.shields.io/badge/Google%20Vision-Cloud-yellow) ![Mapbox](https://img.shields.io/badge/Mapbox-Maps-black)
 
+## Aim and Objectives
+
+We are given a set of geographic locations (latitude & longitude) and a fixed number of agents. The objective is to assign each location to exactly one agent and determine a route per agent such that:
+
+- All locations are visited exactly once
+- Each agent travels a closed route
+- Total distance across all agents is minimized
+- Route distances are as balanced as possible across agents
+- Distances respect Earth curvature (not Euclidean)
+
+This problem is a real-world variant of the **Traveling Salesman Problem (TSP)** and can be framed as a **multi-agent Vehicle Routing Problem (VRP)** with a fairness constraint.
+
 Executive summary
 -----------------
 This repository packages the original analysis for a multi‑agent Vehicle Routing Problem (VRP) variant of the Traveling Sales Man Problem. The dataset includes ~3957 geolocated points and 41 agents. The solution goal: assign every location to a single agent, compute an ordered route per agent, and minimize combined travel distance while balancing per‑agent workloads.
